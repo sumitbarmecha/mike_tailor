@@ -1,0 +1,551 @@
+@font-face {
+  font-family: "Jost-Regular";
+  src: url("../assets/fonts/Jost-Regular.ttf");
+  /* src: url('...//fonts/Jost-Regular.ttf'); */
+}
+body {
+  font-family: "Jost-Regular";
+  overflow-x: hidden;
+}
+.name_div{
+  display: flex;
+  flex-direction: column !important  ;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 60px;
+
+  width: 100vw;
+}
+.form-input span img{
+  width: 20px;
+  cursor: pointer;
+}
+.navbar .container-fluid {
+  margin: 0px 70px;
+  flex-direction: row-reverse;
+}
+.navbar-nav .nav-item {
+  margin: 5px 10px;
+}
+.navbar-nav .cart .nav-link{
+padding: 0px 10px !important;
+margin: 0px 5px ;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.cart .nav-item{
+  margin: 0px;
+}
+.cart{
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+}
+.cart .nav-link svg{
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+nav .collapse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  width: fit-content !important;
+  font-weight: 800;
+  flex-grow: unset;
+}
+.collapse .left_side_list,
+.collapse .right_side_list,
+.collapse .mike_tailor_logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.collapse .right_side_list {
+  justify-content: flex-end;
+  margin: 30px 5px 15px 15px;
+}
+.collapse .left_side_list {
+  justify-content: flex-start;
+  height: 70px;
+  display: flex;
+width: 100% !important;
+  align-items: center;
+}
+.dropdown .shop_dropdown_menu {
+  border: 0px;
+  font-size: 15px;
+}
+.left_side_list .dropdown {
+  display: flex;
+  height: 100%;
+}
+.left_side_list .dropdown .dropdown_anchor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left_side_list .dropdown .show {
+  display: none;
+}
+.left_side_list .dropdown:hover .show {
+  display: flex;
+  width: auto;
+  margin: 75px -15px;
+  flex-direction: row;
+}
+.left_side_list .dropdown{
+  transition: 0s all;
+  transition-delay: 1s;
+}
+.right_side_list .dropdown .show {
+  display: none;
+}
+.right_side_list .dropdown:hover .show {
+  display: flex;
+
+  margin: 48px 5px;
+  flex-direction: column;
+}
+.collapse .right_side_list li Link,
+.collapse .right_side_list li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  height: 100%;
+  margin: 0 !important;
+}
+.collapse .right_side_list li Link .img svg,
+.collapse .right_side_list li a .img svg {
+  width: 20px;
+  height: 100%;
+}
+
+.dropdown_title {
+  font-weight: 800;
+  color: #6c1b1b;
+}
+.profile_dropdown {
+  width: 40%;
+}
+.dropdown .profile_dropdown_menu {
+  border: 0px;
+  font-size: 15px;
+  background-color:#ffffff;
+  width:fit-content !important;
+  list-style: none;
+  position: absolute;
+  padding: 0 !important;
+}
+.dropdown .profile_dropdown_menu li {
+  width: fit-content;
+  padding: 10px 10px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+}
+.right_side_list .profile {
+  margin: 0;
+  padding: 0;
+
+}
+.profile_dropdown  .nav-link svg{
+  margin-bottom: 2px;
+  margin-top: 5px;
+}
+.search_text svg{
+  margin-bottom: 2px;
+  margin-top: 5px;
+}
+.btn-profile {
+  border: 0px;
+  background-color: rgba(240, 248, 255, 0);
+}
+.search .search_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .nav-item :hover{
+    color: #6c1b1b;
+    fill: #6c1b1b;
+}
+nav .line{
+    width: 100%;
+    height: 0.5px;
+    border:#6c1b1b 0.5px solid
+} */
+
+.nav-link:hover {
+  color: #6c1b1b !important;
+}
+.nav-item {
+  display: inline-block;
+  position: relative;
+  color: #000000 !important;
+  fill: #6c1b1b;
+}
+.nav-item:hover {
+  color: #6c1b1b !important;
+}
+.nav-item svg {
+  color: #6c1b1b;
+  fill: #6c1b1b;
+}
+
+.nav-item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #6c1b1b;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.search .nav-link {
+  padding: 0px;
+}
+.nav-item:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-fixed {
+  width: 100%;
+  position: fixed;
+  transition: 0.3s ease-in-out;
+}
+
+/* modal */
+.navbar .modal_news_letter .modal-dialog {
+  width: fit-content !important;
+  min-width: fit-content;
+}
+.navbar .modal_news_letter .modal-content {
+  width: auto;
+}
+.navbar .modal_news_letter .modal-body {
+  display: flex !important;
+  width: fit-content !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  padding: 0 !important;
+}
+.navbar .modal_news_letter .modal-body img {
+  width: 450px;
+  height: 550px;
+}
+.navbar .modal_news_letter .modal-body .newsletters_content {
+  width: 550px;
+  display: flex !important ;
+  flex-direction: column !important;
+  padding: 20px;
+  justify-content: space-between;
+}
+.navbar .modal_news_letter .modal-body .newsletters_content .closebutton {
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar .modal_news_letter .modal-body .newsletters_content .input-group {
+  width: 60%;
+  margin: 0px !important
+        ;
+}
+.modal_news_letter
+  .modal-body
+  .newsletters_content
+  .input-group
+  .input-group-text {
+  font-size: 15px;
+  padding: 15px;
+}
+.navbar .modal_news_letter .modal-body .newsletters_content .content_for_newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.navbar .modal_news_letter .modal-body .newsletters_content h4 {
+  text-align: center;
+  font-weight: 900;
+}
+.navbar .modal_news_letter .modal-body .newsletters_content p {
+  text-align: start;
+  font-size: 15px;
+}
+
+.popup-section {
+  display: flex;
+  width: 100%;
+}
+.login-popup,
+.signup-popup {
+  background-color: #ffffff;
+  width: 900px;
+  height: 551px;
+}
+.mike_tailor_logo svg{
+  width: 310px !important;
+
+}
+.col-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.close {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px;
+}
+.popup-title {
+  display: flex;
+  margin: 15px;
+  font-size: 35px;
+  font-weight: 900;
+  justify-content: space-between;
+}
+
+ .navbar .modal_news_letter .form-input {
+  display: flex;
+  flex-direction: column;
+}
+ .modal_news_letter .form-input div {
+  border-bottom: #cacece 1px solid;
+  display: flex;
+  flex-direction: row;
+}
+ .modal_news_letter .form-input input {
+  background-color: #ffffff;
+  border: 0px;
+  width: 96%;
+}
+.signup-form form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.modal-dialog {
+  pointer-events: all !important;
+}
+.collapse-button  {
+  display: none;
+}
+.form-input input:focus-visible {
+  border: 0px !important;
+  border-bottom: 1px solid black !important;
+}
+.checkbox_remember_me {
+
+  color: #000000;
+  border: 1px solid #cacece;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 9px;
+  border-radius: 3px;
+}
+
+.forgot-password-tag:hover {
+  color: #6c1b1b !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px white inset;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  background-color: #ffffff;
+}
+.responsive_logo{
+  display: none;
+}
+.navbar-toggler {
+  padding:0px;
+  font-size: 15px;
+  line-height: 1;
+  color: var(--bs-navbar-color);
+  background-color: transparent;
+  border: 0px;
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.for-responsive-logo{
+  display: none;
+}
+.navbar-collapse{
+  width:fi ;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 ;
+}
+@media (min-width: 320px) and (max-width: 540px) {
+  .navbar {
+    padding: 0px;
+  }
+  .navbar .container-fluid {
+    margin: auto;
+    padding:10px 0px 0px 0px;
+    
+    background-color: #00000000;
+    align-items: flex-start;
+    
+}
+.dropdown .profile_dropdown_menu{
+  position:absolute;
+}
+  .responsive_logo{
+    display: flex;
+  }
+ .collapse .mike_tailor_logo{
+    display: flex !important;
+  }
+  .navbar .collapse {
+    flex-direction: column;
+
+  }
+ 
+  .collapse-button {
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    padding: 0px;
+    justify-content: space-between;
+  }
+  /* .collapse .mike_tailor_logo {
+    display: none;
+  } */
+  .collapse .right_side_list {
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+    margin: 20px 5px 15px 15px;
+  }
+  .collapse .left_side_list {
+ height: fit-content;
+    flex-direction: column;
+
+  }
+ /* .carousel{
+  margin-top: 70px;
+ } */
+ .login-popup, .signup-popup {
+  background-color: #ffffff;
+  width: fit-content;
+  height: fit-content;
+}.popup-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.col-img .full-image img{
+  display: none;
+}
+.forgot-password-tag{
+
+  padding: 10px;
+}
+.form-footer{
+  flex-direction: column;
+  margin: 0 !important;
+}
+.col-content{
+  padding: 20px;
+}
+.mike_tailor_logo svg{
+  width: 150px !important;
+  display: flex;
+  margin: 8px 11px;
+}
+.container-fluid{
+  flex-direction: row-reverse;
+justify-content: none !important;
+}
+.right_side_list{
+  flex-direction: row;
+  width: fit-content;
+  margin: 0px;
+}
+.profile_dropdown{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start !important;
+}
+.cart{
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.for-responsive-logo{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.for-responsive-logo svg{
+  width: 150px !important;
+}
+.right_side_list .profile {
+  margin:0px 5px;
+  padding:0px 6px;
+  width: fit-content;
+}
+.navbar-nav .cart  .nav-link{
+  margin: 0;padding: 0;
+}
+.m-05{
+  margin: 2.5px .5px !important; 
+}
+
+.left_side_list .dropdown:hover .show {
+  display: flex;
+  width: 95vw;
+  margin: 0px ;
+  position: absolute;
+  flex-wrap: wrap;
+  flex-direction: row;
+  right: -160px;
+  padding: 0 !important;
+}
+.dropdown .shop_dropdown_menu .dropdown-title {
+width: 45%;
+padding: 5px;margin: 2px;
+}
+.cart .nav-link svg {
+  margin-bottom: 3px;
+}
+.navbar-nav .nav-item {
+  margin: 5px 10px;
+  font-size: smaller;
+}
+.navbar-toggler{
+  font-size: 12px;
+}
+.navbar-toggler .navbar-toggler-icon{
+  font-size: 20px;
+}
+}

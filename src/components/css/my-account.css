@@ -1,0 +1,16 @@
+.account-section .select-control {
+    font-size: 12px !important;
+}
+.account-section .select-control option {
+    font-size: 12px !important;
+}
+.account-section .select-control select  {
+    font-size: 12px !important;
+}
+.tab-content{
+    display: flex;
+    flex-direction: column-reverse  ;
+}
+.orders-panel .select-control{
+    margin-left: 2rem;
+}

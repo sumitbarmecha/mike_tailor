@@ -1,0 +1,271 @@
+.ContactUs{
+    margin-top:10px ;
+}
+.ContactUs .contact_box1{
+    font-size: 15px;
+}
+.ContactUs .map_img .contact-map iframe{
+    width: 90vw;
+    height: 500px;
+}
+.ContactUs form{
+    width: 840px;
+height: 693px;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.title{
+    text-align: start;
+    margin: 5px;
+
+}
+.ContactUs form input{
+    padding: 15px 20px;
+    background-color: #F6F6F6;
+    border: 1px solid #F6F6F6;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+form textarea{
+    padding: 15px 20px;
+    background-color: #F6F6F6;
+    border: 1px solid #F6F6F6;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.contactus_submitbtn{
+    color: #6A1818;
+}
+
+
+@font-face {
+    font-family: 'Jost-Medium';
+    src: url("../assets/fonts/Jost-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Jost-Regular';
+    src: url("../assets/fonts/Jost-Regular.ttf");
+}
+@font-face {
+    font-family: 'Jost-SemiBold';
+    src: url("../assets/fonts/Jost-SemiBold.ttf");
+}
+
+.account-section {
+    min-height: 100vh;
+}
+.account-section .account-wrapper {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+}
+.account-section .account-wrapper .account-options .nav-pills {
+    border: 1px solid #dadada;
+    background-color: #f5f5f5;
+    width: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.account-section .account-wrapper .account-options .nav-pills .separator {
+    margin: 0 auto;
+    width: 80%;
+}
+.account-section .account-wrapper .account-options .nav-pills .nav-link {
+    text-align: left;
+    font-size: 16px;
+    padding: 30px;
+    width: 100%;
+    position: relative;
+    color: #151515;
+    font-family: 'Jost-Medium', sans serif;
+    border-radius: 0;
+}
+.account-section .account-wrapper .account-options .nav-pills .nav-link span {
+    font-size: 16px;
+    font-family: 'Jost-Medium', sans serif;
+    color: #6a1818;
+    float: right;
+}
+.account-section .account-wrapper .account-options .nav-pills .active {
+    background-color: #fff;
+    color: #6a1818;
+}
+.account-section .account-wrapper .account-options .nav-pills .active::before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 90%;
+    width: 5px;
+    background-color: #6a1818;
+    border-radius: 5px;
+}
+.account-section .account-wrapper .account-options .tab-content {
+    width: 100%;
+}
+.account-section .account-wrapper .account-options .tab-content .orders-panel .select-control {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-family: 'Jost-Medium', sans serif;
+    max-width: fit-content;
+}
+.account-section .account-wrapper .account-options .tab-content .orders-panel .orders-list {
+    width: 100%;
+}
+.account-section .account-wrapper .account-options .tab-content .orders-panel .orders-list .order-item {
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.account-section .account-wrapper .account-options .tab-content .orders-panel .orders-list .order-item .order-details {
+    display: flex;
+}
+.account-section .account-wrapper .account-options .tab-content .orders-panel .orders-list .order-item .order-details--image img {
+    height: 80px;
+    width: 102px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.account-section .account-wrapper .account-options .tab-content .orders-panel .orders-list .order-item .order-details--info {
+    padding: 5px 20px;
+}
+.account-section .account-wrapper .account-options .tab-content .orders-panel .orders-list .order-item .order-details--info .order-id {
+    font-size: 14px;
+}
+.account-section .account-wrapper .account-options .tab-content .orders-panel .orders-list .order-item .order-details--info .order-status {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Jost-Medium', sans serif;
+    padding: 5px 0;
+}
+.account-section .account-wrapper .account-options .tab-content .orders-panel .orders-list .order-item .order-cta {
+    padding-right: 10px;
+}
+.account-section .account-wrapper .account-options .tab-content .orders-panel .orders-list .order-item .order-cta a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6a1818;
+    font-family: 'Jost-SemiBold', sans serif;
+}
+
+.account-section .account-wrapper .account-options .tab-content form input[type=submit] {
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 300px;
+    font-size: 13px;
+}
+.account-section .account-wrapper .account-options .tab-content .profile-panel, .account-section .account-wrapper .account-options .tab-content .address-panel {
+    padding: 20px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+}
+.account-section .account-wrapper .account-options .tab-content .profile-panel .title-secondary, .account-section .account-wrapper .account-options .tab-content .address-panel .title-secondary {
+    font-size: 16px;
+}
+.account-section .account-wrapper .account-options .tab-content .profile-panel .form-input, .account-section .account-wrapper .account-options .tab-content .address-panel .form-input {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0;
+}
+.account-section .account-wrapper .account-options .tab-content .profile-panel .form-input label, .account-section .account-wrapper .account-options .tab-content .address-panel .form-input label {
+    color: #8a8a8a;
+    font-family: 'Jost-Regular', sans serif;
+    font-size: 12px;
+}
+.account-section .account-wrapper .account-options .tab-content .profile-panel .form-input input[type=text], .account-section .account-wrapper .account-options .tab-content .address-panel .form-input input[type=text], .account-section .account-wrapper .account-options .tab-content .profile-panel .form-input input[type=email], .account-section .account-wrapper .account-options .tab-content .address-panel .form-input input[type=email], .account-section .account-wrapper .account-options .tab-content .profile-panel .form-input input[type=password], .account-section .account-wrapper .account-options .tab-content .address-panel .form-input input[type=password] {
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #8a8a8a;
+    outline: none;
+    font-size: 16px;
+}
+.account-section .account-wrapper .account-options .tab-content .profile-panel .form-input input[type=password], .account-section .account-wrapper .account-options .tab-content .address-panel .form-input input[type=password] {
+    font-family: Verdana;
+    letter-spacing: 0.125em;
+}
+@media (max-width: 480px) {
+    .account-section .account-wrapper {
+        width: 95vw;
+   }
+    .account-section .account-wrapper .account-options .d-flex {
+        flex-direction: column;
+   }
+    .account-section .account-wrapper .account-options .d-flex .nav-pills {
+        width: 100%;
+        margin-bottom: 20px;
+   }
+    .account-section .account-wrapper .account-options .d-flex .tab-content .orders-panel .orders-list .order-item {
+        flex-direction: column;
+        align-items: flex-start;
+   }
+    .account-section .account-wrapper .account-options .d-flex .tab-content .orders-panel .orders-list .order-item .order-cta {
+        padding: 10px 0;
+   }
+}
+.account-section .account-wrapper .account-options .tab-content .orders-panel .select-control {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-family: "Jost-Medium", sans serif;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+}
+.select-control {
+    border-radius: 0.5rem;
+    margin-bottom: 1em;
+    padding: 0.2em 1em;
+    font-size: 10px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #D4D5D9;
+}
+.select {
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.2em;
+    font-size: 20px;
+    color: #151515;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.page-header .header-wrapper {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.page-title
+{
+    font-size: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+
+
+.ContactUs .contact_box1{
+    font-size: 7px;
+}
+
+.ContactUs .contact_box1 h3{
+    font-size: 15px;
+}
+}
